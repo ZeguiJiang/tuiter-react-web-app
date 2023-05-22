@@ -4,3 +4,130 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
+.wd-search-bar {
+    display: inline-block;
+
+    width: calc(100% - 64px);
+
+    background-color: lightgray;
+    color: darkgray;
+
+    border-radius: 50px;
+
+    padding: 10px 0px 10px 0px;
+}
+
+.fa-magnifying-glass {
+    background: transparent;
+
+    color: darkgray;
+
+    margin-left: 10px;
+}
+
+#searchbar {
+    background-color: transparent;
+
+    border: 0px;
+
+    padding-left: 16px;
+
+    outline: none;
+}
+
+.fa-gear {
+    width: 10px;
+    padding: 0px 16px 0px 32px;
+}
+
+a:link {
+    text-decoration:none;
+    font-size: 15px;
+}
+
+.border {
+    color: rgb(110, 118, 125);
+}
+
+#a1 {
+    color: black;
+    padding: 0px 0px 5px 0px;
+    border-bottom: 4px solid rgb(29,161,242);
+    /*border-bottom-color: rgb(29,161,242);*/
+}
+
+.wd-B {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-img-zone img {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+}
+
+.wd-img-zone-title {
+    position: absolute;
+    top: 360px;
+    left: 110px;
+
+    background-color: transparent;
+
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.wd-news-list {
+    list-style-type: none;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.wd-news {
+    margin-top: 16px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wd-news-info {
+    margin-left: 10px;
+}
+
+.wd-news-trend {
+    color: rgb(110, 118, 125);
+    font-size: 14px;
+}
+
+.wd-news-topic {
+    font-weight: 600;
+}
+
+.wd-news-tweets {
+    color: rgb(110, 118, 125);
+    font-size: 14px;
+}
+
+.wd-news-more-detail {
+    font-weight: bolder;
+
+    color: rgb(110, 118, 125);
+
+    margin-right: 10px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bookmarks {
+    text-align: left;
+}
