@@ -395,16 +395,8 @@ a:link {
 
         font-size: 20px;
     }
-
-    .follow-list-item-info {
-        font-size: 14px;
-    }
-
-    .follow-list-item-button {
-        width: 60px;
-        height: 30px;
-
-        font-size: 14px;
+    .follow {
+        display: none;
     }
 }
 
