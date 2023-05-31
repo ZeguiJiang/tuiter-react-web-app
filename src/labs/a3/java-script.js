@@ -33,10 +33,10 @@ function add (a, b) {
 
  const numbersGreaterThan2 = numberArray1
     .filter(a => a > 2);
- const evenNumbers = numberArray1
-    .filter(a => a % 2 === 0);
- const oddNumbers = numberArray1
-    .filter(a => a % 2 !== 0);
+//  const evenNumbers = numberArray1
+//     .filter(a => a % 2 === 0);
+//  const oddNumbers = numberArray1
+//     .filter(a => a % 2 !== 0);
 
 
 

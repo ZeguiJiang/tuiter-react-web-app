@@ -15,7 +15,7 @@ function WorkingWithArrays(){
     const square = a => a * a;
 
     const squares = numberArray1.map(square);
-    const cubes = numberArray1.map(a => a * a * a);
+    // const cubes = numberArray1.map(a => a * a * a);
     let stringArray2 = [];
     for (let i = 0;
          i < stringArray1.length;

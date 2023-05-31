@@ -3,7 +3,7 @@
 import Assignment3  from "./a3";
 import Nav from "../nav";
 
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 
 function Labs(){
     return(

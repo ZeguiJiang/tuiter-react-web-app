@@ -1,7 +1,6 @@
 function IFELSE(){
     let true1 = true
     let false1 = false
-    let false2 = true1 && false1
 
 
 
