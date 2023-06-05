@@ -13,7 +13,7 @@ function App() {
 
 
         <Routes>
-          <Route path="/"         element={<Navigate to="/labs"/>}/>    
+          <Route path="/"         element={<Navigate to="/labs/a4"/>}/>    
           <Route path="/labs/*"  element={<Labs />} />
           {/* <Route path="/labs/a3"  element={<Assignment3 />} /> */}
           <Route path="/hello"    element={<HelloWorld/>}/>
