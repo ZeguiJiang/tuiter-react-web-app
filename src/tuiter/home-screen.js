@@ -1,6 +1,7 @@
 import React from "react";
 import WhatsHappening from "./whats-happening";
-import TuitsList from "./TuitsList";
+import TuitList from "./tuits/";
+// import TuitList from "../tuits";
 
 function HomeScreen() {
     
@@ -8,7 +9,8 @@ function HomeScreen() {
     <>
         <h4>Home</h4>
         <WhatsHappening/>
-        <TuitsList/>
+        {/* <TuitsList/> */}
+        <TuitList/>
     </>
     )
 

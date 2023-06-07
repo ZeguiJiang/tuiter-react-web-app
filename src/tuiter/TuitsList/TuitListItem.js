@@ -5,18 +5,18 @@ import {deleteTuit} from "../reducers/tuits-reducer";
 const TuitListItem = (
     {
         tuit = {
-            "_id": 123,
+            "_id": 1232,
+            "topic": "SpaceX",
             "userName": "SpaceX",
             "time": "2h",
             "avatar": "space.png",
             "liked": true,
             "handle": "@spacex",
             "tuits": "You want to wake up in the morning and think the future is going to be great - and that's what being a spacegaring civilization is all about. It's about believing in the future and thinking that the future will be better than the past. And I can't think of anything more exciting than going out there and being among the stars",
-            "stats": {
-                "replies": 10,
-                "retuits": 432,
-                "likes": 2345
-            }
+            "replies": 10,
+            "retuits": 432,
+            "likes": 2345
+            
         }
     }
 ) => {
@@ -66,7 +66,7 @@ const TuitListItem = (
                                 tuit.liked === false &&
                                 <i className="text-red fa fa-heart"></i>
                             }
-                            {/*<i className="text-red fa fa-heart wd-icon-like"></i>*/}
+                            {/* <i className="text-red fa fa-heart wd-icon-like"></i> */}
                             <span className="text-dark">{tuit.stats.likes}</span>
                         </div>
 
