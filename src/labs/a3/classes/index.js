@@ -55,9 +55,6 @@ function Classes() {
        Blue background</div>
    </div>
 
-
-
-
    </div>
  )
 };

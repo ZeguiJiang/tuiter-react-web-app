@@ -6,6 +6,9 @@ function Impliedreturn() {
     return (
       <>
         <h3>New ES6 arrow functions</h3>
+        <h3>Implied return</h3>
+        fourTimesFive = {fourTimesFive}<br />
+        multiply(4, 5) = {multiply(4, 5)}<br />
       </>
     );
   }

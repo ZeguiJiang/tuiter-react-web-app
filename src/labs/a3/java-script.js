@@ -3,15 +3,15 @@ import VariableTypes from "./variable-types";
 // import BooleanVariables from "./boolean-variables";
 import IFELSE from "./if-else";
 import WorkingWithFunctions from "./working-with-functions";
-
+import BooleanVariables from "./boolean-variables";
 import WorkingWithArrays from "./working-with-arrays";
 import House from "./house";
 import Spread from "./spread";
-
+import IfElse from "./if-else";
 import Destructing from "./destructing";
-
+import TernaryOperator from "./ternary-operator";
 import FunctionDestructing from "./function-destructing";
-
+import TemplateLiterals from "./template-literals";
 let loggedIn = true;
 
 function add (a, b) {
@@ -65,6 +65,16 @@ function JavaScript() {
          <IFELSE/>
          <WorkingWithFunctions />
          <WorkingWithArrays/>
+        <BooleanVariables/>
+        <IfElse/>
+        <TernaryOperator/>
+        <WorkingWithFunctions/>
+        <WorkingWithArrays/>
+        <TemplateLiterals/>
+        <House/>
+        <Spread/>
+        <Destructing/>
+        <FunctionDestructing/>
 
          <div>
            <h2>Logged In</h2>
