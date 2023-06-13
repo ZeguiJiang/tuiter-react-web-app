@@ -7,6 +7,7 @@ const todosSlice = createSlice({
  name: 'todos',
 
  initialState: initialTodos,
+ 
     reducers: {
         addTodo: (state, action) => {
             state.push({

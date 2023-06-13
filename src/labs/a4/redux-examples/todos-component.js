@@ -23,6 +23,7 @@ const Todos = () => {
     dispatch(addTodo(todo))
     setTodo({do: ''})
   }
+
   const toggleTodoDone = (todo) => {
     dispatch(todoDoneToggle(todo))
   }
@@ -40,16 +41,10 @@ const Todos = () => {
                className="btn btn-primary w-25 
                           float-end">
          Create</button>
-          <input
+        <input
           onChange={todoChangeHandler}
           value={todo.do} className="form-control w-75"/>
         </li>
-        {/* {
-         todos.map(todo =>
-           <li className="list-group-item">
-             {todo.do}
-           </li>)
-       } */}
        {
      todos.map((todo, index) =>
       <li key={todo._id}
