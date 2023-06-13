@@ -33,6 +33,3 @@ export const findTuits = async () => {
       .put(`${TUITS_API}/${tuit._id}`, tuit);
     return tuit;
   }
-  
-
-
