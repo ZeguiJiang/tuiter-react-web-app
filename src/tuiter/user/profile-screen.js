@@ -9,7 +9,7 @@ import {
 
 function ProfileScreen() {
   const { currentUser } = useSelector((state) => state.user);
-  const [profile, setProfile] = useState(currentUser || {});
+  const [profile, setProfile] = useState(currentUser);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -28,58 +28,36 @@ function ProfileScreen() {
 
   return (
     <div>
-      <h1>Profile Screen</h1>
-      {profile && (
-        <>
-          <div className="mt-2">
-            <label>UserName</label>
-            <input
-              className="form-control"
-              type="text"
-              value={profile.username}
-              onChange={(event) => {
-                const newProfile = {
-                  ...profile,
-                  username: event.target.value,
-                };
-                setProfile(newProfile);
-              }}
-            />
-          </div>
-
-          <div className="mt-2">
-            <label>Email</label>
-            <input
-              className="form-control"
-              type="text"
-              value={profile.email}
-              onChange={(event) => {
-                const newProfile = {
-                  ...profile,
-                  email: event.target.value,
-                };
-                setProfile(newProfile);
-              }}
-            />
-          </div>
-
-          <div className="mt-2">
-            <button className="m-2 btn btn-primary" onClick={save}>
-              Save
-            </button>
-            <button
-              className="m-2 btn btn-secondary"
-              onClick={() => {
-                dispatch(logoutThunk());
-                navigate("/tuiter/login");
-              }}
-            >
-              Logout
-            </button>
-          </div>
-        </>
-      )}
-    </div>
+    <h1>Profile Screen</h1>
+    {profile && (<div>
+      <div>
+       <label>First Name</label>
+       <input type="text" value={profile.firstName}
+        onChange={(event) => {
+         const newProfile = {
+          ...profile, firstName: event.target.value,
+         };
+         setProfile(newProfile);
+        }}/>
+      </div>
+      <div>
+       <label>Last Name</label>
+       <input type="text" value={profile.lastName}
+        onChange={(event) => {
+         const newProfile = {
+          ...profile, lastName: event.target.value,
+         };
+         setProfile(newProfile);
+        }}/>
+      </div></div>
+    )}
+    <button
+     onClick={() => {
+       dispatch(logoutThunk());
+       navigate("../login");
+     }}>                   Logout</button>
+    <button onClick={save}>Save  </button>
+   </div>
   ); // see below
 }
 export default ProfileScreen;
